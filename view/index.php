@@ -1,6 +1,6 @@
 <?php
 include "../config/db.php";
-$conexion->query("SELECT * FROM Products");
+$consultaProductos = $conexion->query("SELECT * FROM products");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,9 +26,17 @@ $conexion->query("SELECT * FROM Products");
         </thead>
 
 
+    <?php foreach($consultaProductos):?>
         <tbody>
-            <td><?= $_REQUEST['product']?></td>
-            
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+
+    <?php endforeach ?>  
 
         </tbody>
     </table>
