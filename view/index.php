@@ -46,11 +46,23 @@ $consultaProductos = $conexion->query("SELECT * FROM products");
         <tbody>
             <tr>
             <td><?= $product['product']?></td>
-            <td><?= $product['status']?></td>
             <td><?= $product['price']?></td>
-            <td></td>
-            <td>editar</td>
-            <td>Eliminar</td>
+            <td><?= $product['status']?></td>
+            <td>
+                
+                <button><a href="show.php?id_show=<?=$product['id']?>">ver</a></button>
+            
+            </td>
+            <td>
+
+            <button><a href="edit_form.php?id_edit=<?=$product['id']?>">editar</a></button>
+
+            </td>
+            <td>
+            
+            <button><a href="../model/delete.php?id_delete=<?=$product['id']?>">eliminar</a></button>
+
+            </td>
             </tr>
 
     <?php 

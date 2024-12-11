@@ -12,7 +12,7 @@ include "../config/db.php"
 </head>
 <body>
 <h1>Ingrese los datos del Producto</h1>
-
+<button><a href="../view/index.php">inicio</a></button>
 <form action="../model/save.php" method="post">
     <label>Producto</label>
     <input type="text" name="product">
