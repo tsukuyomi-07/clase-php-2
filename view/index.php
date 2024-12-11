@@ -55,7 +55,7 @@ $consultaProductos = $conexion->query("SELECT * FROM products");
             </td>
             <td>
 
-            <button><a href="edit_form.php?id_edit=<?=$product['id']?>">editar</a></button>
+            <button><a href="edit.php?id_edit=<?=$product['id']?>">editar</a></button>
 
             </td>
             <td>
