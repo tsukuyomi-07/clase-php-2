@@ -30,7 +30,7 @@ $product = $conexion->query("SELECT * FROM products WHERE id = '$_REQUEST[id_edi
 
 <label for="">Editar estado</label>
 <input type="text" name="status" id="status" value="<?=$product->status?>">
-
+<input type="hidden" name="id_edit" value="<?=$product->id?>">
 <button type="submit">Guardar cambios</button>
 
 
